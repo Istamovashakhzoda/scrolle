@@ -8,27 +8,49 @@
     />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-      .container{
+      .container {
         margin-top: 50px;
         width: 50%;
         height: 550px;
+        display: flex;
         border-radius: 20px;
         box-shadow: 1px 3px 3px 7px lightblue;
+        overflow: hidden;
       }
-      .child-left{
+      .child-left {
+        width: 50%;
         padding-top: 20px;
-       line-height: 90px;
-       margin-left: -40px;
+        line-height: 90px;
+        margin-left: -40px;
       }
-      li{
-          list-style: none;
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(37, 37, 37);
+        font-size: 20px;
+      }
+      .child-right {
+        padding-top: 10px;
+        width: 50%;
+        color: rgb(71, 69, 69);
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: lightblue white;
+      }
 
-        }
-        a{
-            text-decoration: none;
-            color: rgb(37, 37, 37);
-          font-size: 20px;
-        }
+      img {
+        width: 450px;
+        height: 320px;
+        margin-left: -40px;
+      }
+
+      h1 {
+        font-size: 29px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -36,7 +58,7 @@
       <div class="child-left">
         <ul>
           <li>
-            <a href="boxs1">
+            <a href="#boxs1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -52,7 +74,7 @@
             </a>
           </li>
           <li>
-            <a href="boxs2">
+            <a href="#boxs2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -68,7 +90,7 @@
             </a>
           </li>
           <li>
-            <a href="boxs3">
+            <a href="#boxs3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -84,7 +106,7 @@
             </a>
           </li>
           <li>
-            <a href="boxs4">
+            <a href="#boxs4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -100,7 +122,7 @@
             </a>
           </li>
           <li>
-            <a href="boxs5">
+            <a href="#boxs5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -117,13 +139,65 @@
           </li>
         </ul>
       </div>
-      <!-- THE RIGHT SIDE -->
+      <!-- Right content -->
       <div class="child-right">
-        <div class="boxs1"></div>
-        <div class="boxs2"></div>
-        <div class="boxs3"></div>
-        <div class="boxs4"></div>
-        <div class="boxs5"></div>
+        <div id="boxs1">
+          <div id="boxs1">
+            <h1>Your Idea & Vision</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              quas maxime consequatur minus natus qui adipisci molestias
+              possimus voluptatem, quo, reiciendis cum. Amet possimus eos facere
+              eius enim aperiam repellat ipsam architecto nisi perspiciatis
+              dolorum, voluptatum et deserunt ipsum delectus?
+            </p>
+            <img src="./image/wg.png" alt="" />
+          </div>
+        </div>
+        <div id="boxs2">
+          <h1>Product Specification</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quas
+            maxime consequatur minus natus qui adipisci molestias possimus
+            voluptatem, quo, reiciendis cum. Amet possimus eos facere eius enim
+            aperiam repellat ipsam architecto nisi perspiciatis dolorum,
+            voluptatum et deserunt ipsum delectus?
+          </p>
+          <img src="./image/wt.png" alt="" />
+        </div>
+        <div id="boxs3">
+          <h1>UI/UX Design</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quas
+            maxime consequatur minus natus qui adipisci molestias possimus
+            voluptatem, quo, reiciendis cum. Amet possimus eos facere eius enim
+            aperiam repellat ipsam architecto nisi perspiciatis dolorum,
+            voluptatum et deserunt ipsum delectus?
+          </p>
+          <img src="./image/workers.png" alt="" />
+        </div>
+        <div id="boxs4">
+          <h1>AI & Machine Learning</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quas
+            maxime consequatur minus natus qui adipisci molestias possimus
+            voluptatem, quo, reiciendis cum. Amet possimus eos facere eius enim
+            aperiam repellat ipsam architecto nisi perspiciatis dolorum,
+            voluptatum et deserunt ipsum delectus?
+          </p>
+          <img src="./image/works.png" alt="" />
+        </div>
+        <div id="boxs5">
+          <h1>Architecture & Engineering</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quas
+            maxime consequatur minus natus qui adipisci molestias possimus
+            voluptatem, quo, reiciendis cum. Amet possimus eos facere eius enim
+            aperiam repellat ipsam architecto nisi perspiciatis dolorum,
+            voluptatum et deserunt ipsum delectus?
+          </p>
+          <img src="./image/brain.png" alt="" />
+        </div>
       </div>
     </div>
   </body>
